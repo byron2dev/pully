@@ -11,10 +11,22 @@ This line was added by byerun on branch feature1.
 ## Diagrams
 
 ```mermaid
-flowchart TD;
-    A[Start] --> B[Process 1];
-    B --> C[Process 2];
-    C --> D[End];
+flowchart LR
+    subgraph subgraph1
+        direction TB
+        top1[top] --> bottom1[bottom]
+    end
+    subgraph subgraph2
+        direction TB
+        top2[top] --> bottom2[bottom]
+    end
+    %% ^ These subgraphs are identical, except for the links to them:
+
+    %% Link *to* subgraph1: subgraph1 direction is maintained
+    outside --> subgraph1
+    %% Link *within* subgraph2:
+    %% subgraph2 inherits the direction of the top-level graph (LR)
+    outside ---> top2
 ```
 
 ```plantuml

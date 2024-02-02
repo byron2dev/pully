@@ -29,6 +29,7 @@ flowchart LR
     outside ---> top2
 ```
 
+PlantUML diagrams not support on GitHub as of 2024-02-02
 ```plantuml
 @startuml
 

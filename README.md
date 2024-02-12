@@ -40,3 +40,8 @@ Chair --* Room
 ```
 Time 2024-02-12-12-25
  
+2024-02-02-13-37 Changed
+
+# Another top level header
+
+Verifying https://github.blog/changelog/2021-04-13-table-of-contents-support-in-markdown-files/
